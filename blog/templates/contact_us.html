@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h1>CT Blog Contact US Page</h1>
+{%if errors%}
+{{errors}}
+{%endif%}
+
+<form method ="post" action="">{%csrf_token%}
+    <label for="">First name</label>
+    <input type="text" name="first_name">
+    <br>
+
+    <label for="">Last name</label>
+    <input type="text" name="last_name">
+    <br>
+
+    <labe for="">Email</labe>
+    <input type="text" name="email">
+    <br>
+
+    <label for="">Message</label>
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+    <br>
+    <button>Submit</button>
+    </form>
+{%endblock%}

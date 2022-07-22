@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CTBLOG Homepage</title>
+
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-el">
+                <li><a href="{%url 'blog:home' %}">Home Page</a></li>
+                <li><a href="{%url 'blog:contact-us' %}">Contact US</a></li>
+                <li><a href="">About US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+{%block content%}
+
+{%endblock%}
+</body>
+</html>
